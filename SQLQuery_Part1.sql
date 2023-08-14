@@ -42,4 +42,4 @@ select * from CompanyInfo c join ProductInfo p on c.CId = p.CId
 select p.PName, c.CName from CompanyInfo c join ProductInfo p on c.CId=p.CId
 
 --All possible Combinations of company and products
-select * from CompanyInfo c full outer join ProductInfo p on c.CId = p.CId
+select * from CompanyInfo c cross join ProductInfo p
